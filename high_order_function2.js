@@ -31,3 +31,24 @@ class Array {
 }
 */
 arr.forEach(square);
+//2. 新建一个数组，使用map方法，返回一个新的数组，数组中含有原数组每个数的平方
+let arr1=[1,2,3,90,38,34];
+let square_1=(x,y,z)=>{
+	return x*x;
+}
+arr1.map(square_1);
+arr1.map(square_1);
+let a2=arr1.map(square_1);
+let b2=arr1.map(square_1);
+console.log(arr1.map(square_1));
+let square_2=(x,y,z)=>{
+   if(x>10) return x;
+	else {return 10;}
+}
+arr1.map(square_2);
+console.log(arr1.map(square_2));
+
+let square_3=(x,y,z)=>{
+   if(y%2){return x;}
+}
+console.log(arr1.map(square_3));
