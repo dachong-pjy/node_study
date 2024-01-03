@@ -52,3 +52,13 @@ let square_3=(x,y,z)=>{
    if(y%2){return x;}
 }
 console.log(arr1.map(square_3));
+//3. 新建一个数组，使用filter方法，返回一个新的数组，数组中包含原数组中的正数
+let arr_3=[-1, 5, 5, -5, 2, 4, -8, 3, -8, 5, -2, 1, 1, 9, -8, -7, 9, 9, 7, 1]
+let f=x=>{
+	if(x>0){return x}
+}
+console.log(arr_3.filter(f));
+let f_1=x=>{
+	if(x<0){return x};
+}
+console.log(arr_3.filter(f_1));
