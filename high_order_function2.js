@@ -58,7 +58,18 @@ let f=x=>{
 	if(x>0){return x}
 }
 console.log(arr_3.filter(f));
+
 let f_1=x=>{
 	if(x<0){return x};
 }
 console.log(arr_3.filter(f_1));
+//4. 新建一个字符串数组，使用reduce方法，返回一个新字符串，新字符串是原数组所有元素的拼接而成的字符串
+let arr_4=['BnJU', 'tbRtd', 'j4C', 'r12nb', 'rhI', 'b7nZY', '41Cx', 'xPX', 'FGN', '2DijK', 'MXBpZ', 'x1D', 'ERDuW', 'SqM', 'Kuo', 'eFW', 'sFC', 'DAbw', 'LLbb', 'g8yVm']
+let b='_'
+let ff=(x,y,z)=>{
+    if(!z) return y;
+    else{return x+b+y;}	
+}
+let c='';
+arr_4.reduce(ff,c);
+console.log(arr_4.reduce(ff,c));
